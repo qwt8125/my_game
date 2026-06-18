@@ -1,0 +1,133 @@
+[
+  {
+    "id": "map_novice_field",
+    "name": "新手村外",
+    "requiredLevel": 1,
+    "recommendedPower": 0,
+    "width": 1600,
+    "height": 1000,
+    "backgroundSprite": "field_gray",
+    "monsterIds": [
+      "monster_chicken",
+      "monster_deer",
+      "monster_wolf"
+    ]
+  },
+  {
+    "id": "map_mine_entrance",
+    "name": "废弃矿洞入口",
+    "requiredLevel": 2,
+    "recommendedPower": 220,
+    "width": 1600,
+    "height": 1000,
+    "backgroundSprite": "mine_gate_gray",
+    "monsterIds": [
+      "monster_rat",
+      "monster_mine_spider"
+    ]
+  },
+  {
+    "id": "map_snake_valley",
+    "name": "毒蛇山谷",
+    "requiredLevel": 3,
+    "recommendedPower": 260,
+    "width": 1700,
+    "height": 1050,
+    "backgroundSprite": "valley_gray",
+    "monsterIds": [
+      "monster_snake",
+      "monster_venom_snake"
+    ]
+  },
+  {
+    "id": "map_mine_depths",
+    "name": "矿洞深处",
+    "requiredLevel": 4,
+    "recommendedPower": 360,
+    "width": 1700,
+    "height": 1050,
+    "backgroundSprite": "mine_depths_gray",
+    "monsterIds": [
+      "monster_mine_spider",
+      "monster_cave_bat"
+    ]
+  },
+  {
+    "id": "map_skeleton_cave",
+    "name": "骷髅洞",
+    "requiredLevel": 5,
+    "recommendedPower": 420,
+    "width": 1800,
+    "height": 1100,
+    "backgroundSprite": "skeleton_cave_gray",
+    "monsterIds": [
+      "monster_skeleton",
+      "monster_skeleton_archer"
+    ]
+  },
+  {
+    "id": "map_temple_outskirts",
+    "name": "寺庙外庭",
+    "requiredLevel": 6,
+    "recommendedPower": 560,
+    "width": 1800,
+    "height": 1100,
+    "backgroundSprite": "temple_out_gray",
+    "monsterIds": [
+      "monster_temple_guard",
+      "monster_dark_monk"
+    ]
+  },
+  {
+    "id": "map_temple_hall",
+    "name": "寺庙正殿",
+    "requiredLevel": 7,
+    "recommendedPower": 720,
+    "width": 1900,
+    "height": 1150,
+    "backgroundSprite": "temple_hall_gray",
+    "monsterIds": [
+      "monster_dark_monk",
+      "monster_stone_guardian"
+    ]
+  },
+  {
+    "id": "map_redmoon_ravine",
+    "name": "赤月峡谷入口",
+    "requiredLevel": 8,
+    "recommendedPower": 900,
+    "width": 1900,
+    "height": 1150,
+    "backgroundSprite": "redmoon_gray",
+    "monsterIds": [
+      "monster_redmoon_spider",
+      "monster_blood_hound"
+    ]
+  },
+  {
+    "id": "map_redmoon_depths",
+    "name": "赤月深渊",
+    "requiredLevel": 9,
+    "recommendedPower": 1080,
+    "width": 2000,
+    "height": 1200,
+    "backgroundSprite": "redmoon_depths_gray",
+    "monsterIds": [
+      "monster_redmoon_guard",
+      "monster_abyss_mage"
+    ]
+  },
+  {
+    "id": "map_demon_altar",
+    "name": "恶魔祭坛",
+    "requiredLevel": 10,
+    "recommendedPower": 1280,
+    "width": 2100,
+    "height": 1250,
+    "backgroundSprite": "demon_altar_gray",
+    "monsterIds": [
+      "monster_altar_knight",
+      "monster_demon_priest"
+    ]
+  }
+]

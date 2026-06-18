@@ -1,0 +1,487 @@
+[
+  {
+    "id": "item_wood_sword",
+    "name": "木剑",
+    "type": "equipment",
+    "slot": "weapon",
+    "quality": "common",
+    "requiredLevel": 1,
+    "attack": 3,
+    "defense": 0,
+    "attackSpeed": 3,
+    "hp": 0,
+    "sellGold": 5
+  },
+  {
+    "id": "item_cloth_armor",
+    "name": "布衣",
+    "type": "equipment",
+    "slot": "armor",
+    "quality": "common",
+    "requiredLevel": 1,
+    "attack": 0,
+    "defense": 2,
+    "attackSpeed": 0,
+    "hp": 10,
+    "sellGold": 5
+  },
+  {
+    "id": "item_leather_helmet",
+    "name": "皮盔",
+    "type": "equipment",
+    "slot": "helmet",
+    "quality": "common",
+    "requiredLevel": 2,
+    "attack": 0,
+    "defense": 2,
+    "attackSpeed": 0,
+    "hp": 8,
+    "sellGold": 8
+  },
+  {
+    "id": "item_copper_necklace",
+    "name": "铜项链",
+    "type": "equipment",
+    "slot": "necklace",
+    "quality": "common",
+    "requiredLevel": 2,
+    "attack": 1,
+    "defense": 0,
+    "attackSpeed": 2,
+    "hp": 4,
+    "sellGold": 8
+  },
+  {
+    "id": "item_cloth_boots",
+    "name": "布靴",
+    "type": "equipment",
+    "slot": "boots",
+    "quality": "common",
+    "requiredLevel": 2,
+    "attack": 0,
+    "defense": 1,
+    "attackSpeed": 5,
+    "hp": 4,
+    "sellGold": 8
+  },
+  {
+    "id": "item_iron_sword",
+    "name": "铁剑",
+    "type": "equipment",
+    "slot": "weapon",
+    "quality": "fine",
+    "requiredLevel": 3,
+    "attack": 8,
+    "defense": 0,
+    "attackSpeed": 6,
+    "hp": 0,
+    "sellGold": 20
+  },
+  {
+    "id": "item_copper_bracelet",
+    "name": "铜手镯",
+    "type": "equipment",
+    "slot": "bracelet",
+    "quality": "common",
+    "requiredLevel": 3,
+    "attack": 2,
+    "defense": 1,
+    "attackSpeed": 1,
+    "hp": 5,
+    "sellGold": 12
+  },
+  {
+    "id": "item_iron_ring",
+    "name": "铁戒指",
+    "type": "equipment",
+    "slot": "ring",
+    "quality": "common",
+    "requiredLevel": 3,
+    "attack": 2,
+    "defense": 0,
+    "attackSpeed": 2,
+    "hp": 4,
+    "sellGold": 12
+  },
+  {
+    "id": "item_scale_armor",
+    "name": "鳞甲",
+    "type": "equipment",
+    "slot": "armor",
+    "quality": "fine",
+    "requiredLevel": 4,
+    "attack": 0,
+    "defense": 6,
+    "attackSpeed": 0,
+    "hp": 28,
+    "sellGold": 26
+  },
+  {
+    "id": "item_bone_helmet",
+    "name": "骨盔",
+    "type": "equipment",
+    "slot": "helmet",
+    "quality": "fine",
+    "requiredLevel": 5,
+    "attack": 1,
+    "defense": 5,
+    "attackSpeed": 0,
+    "hp": 18,
+    "sellGold": 30
+  },
+  {
+    "id": "item_guard_bracelet",
+    "name": "守卫手镯",
+    "type": "equipment",
+    "slot": "bracelet",
+    "quality": "fine",
+    "requiredLevel": 6,
+    "attack": 4,
+    "defense": 3,
+    "attackSpeed": 2,
+    "hp": 12,
+    "sellGold": 40
+  },
+  {
+    "id": "item_silver_blade",
+    "name": "银刃",
+    "type": "equipment",
+    "slot": "weapon",
+    "quality": "rare",
+    "requiredLevel": 6,
+    "attack": 16,
+    "defense": 0,
+    "attackSpeed": 8,
+    "hp": 0,
+    "sellGold": 58
+  },
+  {
+    "id": "item_swift_boots",
+    "name": "疾影靴",
+    "type": "equipment",
+    "slot": "boots",
+    "quality": "fine",
+    "requiredLevel": 6,
+    "attack": 1,
+    "defense": 2,
+    "attackSpeed": 11,
+    "hp": 10,
+    "sellGold": 42
+  },
+  {
+    "id": "item_spirit_necklace",
+    "name": "玄灵项链",
+    "type": "equipment",
+    "slot": "necklace",
+    "quality": "rare",
+    "requiredLevel": 7,
+    "attack": 7,
+    "defense": 2,
+    "attackSpeed": 4,
+    "hp": 18,
+    "sellGold": 64
+  },
+  {
+    "id": "item_temple_robe",
+    "name": "寺纹长衣",
+    "type": "equipment",
+    "slot": "armor",
+    "quality": "rare",
+    "requiredLevel": 7,
+    "attack": 2,
+    "defense": 10,
+    "attackSpeed": 1,
+    "hp": 52,
+    "sellGold": 70
+  },
+  {
+    "id": "item_blood_ring",
+    "name": "血纹戒指",
+    "type": "equipment",
+    "slot": "ring",
+    "quality": "rare",
+    "requiredLevel": 8,
+    "attack": 8,
+    "defense": 2,
+    "attackSpeed": 4,
+    "hp": 16,
+    "sellGold": 75
+  },
+  {
+    "id": "item_redmoon_blade",
+    "name": "赤月刃",
+    "type": "equipment",
+    "slot": "weapon",
+    "quality": "epic",
+    "setId": "set_redmoon",
+    "setName": "赤月套装",
+    "setBonuses": [
+      {
+        "pieces": 2,
+        "attack": 8,
+        "hp": 40
+      },
+      {
+        "pieces": 4,
+        "attack": 16,
+        "defense": 8,
+        "attackSpeed": 6,
+        "hp": 100
+      }
+    ],
+    "requiredLevel": 8,
+    "attack": 25,
+    "defense": 2,
+    "attackSpeed": 10,
+    "hp": 18,
+    "sellGold": 120
+  },
+  {
+    "id": "mat_beast_bone",
+    "name": "兽骨",
+    "type": "material",
+    "quality": "common",
+    "sellGold": 2
+  },
+  {
+    "id": "mat_iron_ore",
+    "name": "铁矿石",
+    "type": "material",
+    "quality": "common",
+    "sellGold": 4
+  },
+  {
+    "id": "mat_venom_sac",
+    "name": "毒囊",
+    "type": "material",
+    "quality": "fine",
+    "sellGold": 6
+  },
+  {
+    "id": "mat_bone_shard",
+    "name": "骨片",
+    "type": "material",
+    "quality": "fine",
+    "sellGold": 7
+  },
+  {
+    "id": "mat_temple_relic",
+    "name": "残破符片",
+    "type": "material",
+    "quality": "rare",
+    "sellGold": 10
+  },
+  {
+    "id": "mat_redmoon_dust",
+    "name": "赤月尘",
+    "type": "material",
+    "quality": "rare",
+    "sellGold": 12
+  },
+  {
+    "id": "mat_common_essence",
+    "name": "粗糙装备精华",
+    "type": "material",
+    "quality": "common",
+    "sellGold": 3
+  },
+  {
+    "id": "mat_fine_essence",
+    "name": "精良装备精华",
+    "type": "material",
+    "quality": "fine",
+    "sellGold": 8
+  },
+  {
+    "id": "mat_rare_essence",
+    "name": "稀有装备精华",
+    "type": "material",
+    "quality": "rare",
+    "sellGold": 14
+  },
+  {
+    "id": "mat_epic_essence",
+    "name": "史诗装备精华",
+    "type": "material",
+    "quality": "epic",
+    "sellGold": 24
+  },
+  {
+    "id": "consumable_small_heal",
+    "name": "回春散",
+    "type": "consumable",
+    "quality": "common",
+    "requiredLevel": 1,
+    "sellGold": 3,
+    "buffHp": 30
+  },
+  {
+    "id": "consumable_attack_tonic",
+    "name": "勇力药",
+    "type": "consumable",
+    "quality": "fine",
+    "requiredLevel": 2,
+    "sellGold": 8,
+    "buffAttack": 6
+  },
+  {
+    "id": "consumable_guard_tonic",
+    "name": "铁骨药",
+    "type": "consumable",
+    "quality": "fine",
+    "requiredLevel": 2,
+    "sellGold": 8,
+    "buffDefense": 4
+  },
+  {
+    "id": "consumable_swift_tonic",
+    "name": "疾风药",
+    "type": "consumable",
+    "quality": "rare",
+    "requiredLevel": 4,
+    "sellGold": 12,
+    "buffAttackSpeed": 8
+  },
+  {
+    "id": "item_redmoon_armor",
+    "name": "赤月战甲",
+    "type": "equipment",
+    "slot": "armor",
+    "quality": "epic",
+    "setId": "set_redmoon",
+    "setName": "赤月套装",
+    "setBonuses": [
+      {
+        "pieces": 2,
+        "attack": 8,
+        "hp": 40
+      },
+      {
+        "pieces": 4,
+        "attack": 16,
+        "defense": 8,
+        "attackSpeed": 6,
+        "hp": 100
+      }
+    ],
+    "requiredLevel": 9,
+    "attack": 4,
+    "defense": 15,
+    "attackSpeed": 2,
+    "hp": 72,
+    "sellGold": 150
+  },
+  {
+    "id": "item_abyss_helmet",
+    "name": "深渊战盔",
+    "type": "equipment",
+    "slot": "helmet",
+    "quality": "epic",
+    "setId": "set_redmoon",
+    "setName": "赤月套装",
+    "setBonuses": [
+      {
+        "pieces": 2,
+        "attack": 8,
+        "hp": 40
+      },
+      {
+        "pieces": 4,
+        "attack": 16,
+        "defense": 8,
+        "attackSpeed": 6,
+        "hp": 100
+      }
+    ],
+    "requiredLevel": 9,
+    "attack": 3,
+    "defense": 10,
+    "attackSpeed": 1,
+    "hp": 42,
+    "sellGold": 140
+  },
+  {
+    "id": "item_soul_bracelet",
+    "name": "魂纹手镯",
+    "type": "equipment",
+    "slot": "bracelet",
+    "quality": "epic",
+    "setId": "set_redmoon",
+    "setName": "赤月套装",
+    "setBonuses": [
+      {
+        "pieces": 2,
+        "attack": 8,
+        "hp": 40
+      },
+      {
+        "pieces": 4,
+        "attack": 16,
+        "defense": 8,
+        "attackSpeed": 6,
+        "hp": 100
+      }
+    ],
+    "requiredLevel": 10,
+    "attack": 9,
+    "defense": 5,
+    "attackSpeed": 5,
+    "hp": 30,
+    "sellGold": 165
+  },
+  {
+    "id": "item_demon_ring",
+    "name": "恶魔戒指",
+    "type": "equipment",
+    "slot": "ring",
+    "quality": "epic",
+    "setId": "set_redmoon",
+    "setName": "赤月套装",
+    "setBonuses": [
+      {
+        "pieces": 2,
+        "attack": 8,
+        "hp": 40
+      },
+      {
+        "pieces": 4,
+        "attack": 16,
+        "defense": 8,
+        "attackSpeed": 6,
+        "hp": 100
+      }
+    ],
+    "requiredLevel": 10,
+    "attack": 13,
+    "defense": 4,
+    "attackSpeed": 6,
+    "hp": 28,
+    "sellGold": 180
+  },
+  {
+    "id": "mat_abyss_ember",
+    "name": "深渊余烬",
+    "type": "material",
+    "quality": "epic",
+    "sellGold": 16
+  },
+  {
+    "id": "mat_demon_core",
+    "name": "恶魔核心",
+    "type": "material",
+    "quality": "epic",
+    "sellGold": 22
+  },
+  {
+    "id": "consumable_hero_elixir",
+    "name": "英雄秘药",
+    "type": "consumable",
+    "quality": "epic",
+    "requiredLevel": 9,
+    "sellGold": 20,
+    "buffHp": 80,
+    "buffAttack": 10,
+    "buffDefense": 6,
+    "buffAttackSpeed": 8
+  }
+]

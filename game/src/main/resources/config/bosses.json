@@ -1,0 +1,10 @@
+[
+  {
+    "id": "boss_skeleton_guard",
+    "name": "骷髅守卫",
+    "mapId": "map_skeleton_cave",
+    "monsterId": "monster_skeleton",
+    "respawnMinutes": 30,
+    "rewardMultiplier": 2
+  }
+]

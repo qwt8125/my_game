@@ -1,0 +1,416 @@
+[
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_chicken",
+    "items": [
+      {
+        "itemId": "item_wood_sword",
+        "rate": 0.03,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_small_heal",
+        "rate": 0.08,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_beast_bone",
+        "rate": 0.16,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_deer",
+    "items": [
+      {
+        "itemId": "item_cloth_armor",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_small_heal",
+        "rate": 0.1,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "itemId": "mat_beast_bone",
+        "rate": 0.2,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_wolf",
+    "items": [
+      {
+        "itemId": "item_leather_helmet",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "item_copper_necklace",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_attack_tonic",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_beast_bone",
+        "rate": 0.25,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_rat",
+    "items": [
+      {
+        "itemId": "item_cloth_boots",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_guard_tonic",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_iron_ore",
+        "rate": 0.22,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_mine_spider",
+    "items": [
+      {
+        "itemId": "item_copper_bracelet",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_attack_tonic",
+        "rate": 0.06,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_iron_ore",
+        "rate": 0.28,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_snake",
+    "items": [
+      {
+        "itemId": "item_iron_sword",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "item_iron_ring",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_guard_tonic",
+        "rate": 0.06,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_venom_sac",
+        "rate": 0.22,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_venom_snake",
+    "items": [
+      {
+        "itemId": "item_scale_armor",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_venom_sac",
+        "rate": 0.28,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_cave_bat",
+    "items": [
+      {
+        "itemId": "item_swift_boots",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_swift_tonic",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_iron_ore",
+        "rate": 0.25,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_skeleton",
+    "items": [
+      {
+        "itemId": "item_bone_helmet",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_bone_shard",
+        "rate": 0.3,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_skeleton_archer",
+    "items": [
+      {
+        "itemId": "item_silver_blade",
+        "rate": 0.035,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_bone_shard",
+        "rate": 0.26,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_temple_guard",
+    "items": [
+      {
+        "itemId": "item_guard_bracelet",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_swift_tonic",
+        "rate": 0.06,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_temple_relic",
+        "rate": 0.22,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_dark_monk",
+    "items": [
+      {
+        "itemId": "item_spirit_necklace",
+        "rate": 0.045,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_temple_relic",
+        "rate": 0.28,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_stone_guardian",
+    "items": [
+      {
+        "itemId": "item_temple_robe",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_temple_relic",
+        "rate": 0.32,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_redmoon_spider",
+    "items": [
+      {
+        "itemId": "item_blood_ring",
+        "rate": 0.045,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_redmoon_dust",
+        "rate": 0.3,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_blood_hound",
+    "items": [
+      {
+        "itemId": "item_redmoon_blade",
+        "rate": 0.025,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_redmoon_dust",
+        "rate": 0.35,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_redmoon_guard",
+    "items": [
+      {
+        "itemId": "item_redmoon_armor",
+        "rate": 0.035,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_hero_elixir",
+        "rate": 0.04,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_abyss_ember",
+        "rate": 0.3,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_abyss_mage",
+    "items": [
+      {
+        "itemId": "item_abyss_helmet",
+        "rate": 0.035,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_abyss_ember",
+        "rate": 0.34,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_altar_knight",
+    "items": [
+      {
+        "itemId": "item_soul_bracelet",
+        "rate": 0.03,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "consumable_hero_elixir",
+        "rate": 0.05,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_demon_core",
+        "rate": 0.28,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
+  },
+  {
+    "sourceType": "monster",
+    "sourceId": "monster_demon_priest",
+    "items": [
+      {
+        "itemId": "item_demon_ring",
+        "rate": 0.028,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "itemId": "mat_demon_core",
+        "rate": 0.34,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      }
+    ]
+  }
+]

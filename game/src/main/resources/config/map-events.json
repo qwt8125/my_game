@@ -1,0 +1,520 @@
+[
+  {
+    "id": "event_novice_beast_area",
+    "mapId": "map_novice_field",
+    "name": "野兽出没区",
+    "type": "monster_area",
+    "x": 840,
+    "y": 420,
+    "sprite": "wolf_area",
+    "dialogue": "草丛被踩出一串凌乱痕迹。",
+    "targetMonsterIds": [
+      "monster_chicken",
+      "monster_deer",
+      "monster_wolf"
+    ],
+    "requiredTaskIds": [],
+    "nextEventIds": [
+      "event_novice_old_well"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 0,
+    "encounterMinCount": 1,
+    "encounterMaxCount": 3,
+    "encounterEliteChance": 0.12,
+    "encounterIntervalSeconds": 4,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_chicken",
+        "weight": 45
+      },
+      {
+        "monsterId": "monster_deer",
+        "weight": 35
+      },
+      {
+        "monsterId": "monster_wolf",
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "id": "event_novice_old_well",
+    "mapId": "map_novice_field",
+    "name": "废井",
+    "type": "reward",
+    "x": 1120,
+    "y": 650,
+    "sprite": "old_well",
+    "dialogue": "井沿有新鲜抓痕，你从砖缝里找到几枚旧铜钱。",
+    "rewardGold": 12,
+    "rewardExp": 10,
+    "rewardItems": [
+      {
+        "itemId": "mat_beast_bone",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_first_blood"
+    ],
+    "repeatable": false,
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_novice_daily_cache",
+    "mapId": "map_novice_field",
+    "name": "林地补给",
+    "type": "reward",
+    "x": 520,
+    "y": 700,
+    "sprite": "supply_cache",
+    "dialogue": "树根下压着一只旧布袋，像是巡村人每天都会补上的路粮。",
+    "rewardGold": 8,
+    "rewardExp": 12,
+    "rewardItems": [
+      {
+        "itemId": "mat_beast_bone",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_talk_chief"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_mine_track",
+    "mapId": "map_mine_entrance",
+    "name": "旧矿轨",
+    "type": "random_encounter",
+    "x": 880,
+    "y": 560,
+    "sprite": "mine_track",
+    "dialogue": "矿轨深处传来窸窣声。",
+    "targetMonsterIds": [
+      "monster_rat",
+      "monster_mine_spider"
+    ],
+    "requiredTaskIds": [
+      "task_talk_miner"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 45,
+    "encounterMinCount": 1,
+    "encounterMaxCount": 2,
+    "encounterEliteChance": 0.1,
+    "encounterIntervalSeconds": 5,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_rat",
+        "weight": 65
+      },
+      {
+        "monsterId": "monster_mine_spider",
+        "weight": 35
+      }
+    ]
+  },
+  {
+    "id": "event_mine_daily_ore",
+    "mapId": "map_mine_entrance",
+    "name": "松动矿壁",
+    "type": "reward",
+    "x": 1240,
+    "y": 720,
+    "sprite": "ore_wall",
+    "dialogue": "矿壁裂缝里露出一小截暗色矿脉，敲下几块还能用的矿石。",
+    "rewardGold": 14,
+    "rewardExp": 18,
+    "rewardItems": [
+      {
+        "itemId": "mat_iron_ore",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_talk_miner"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_snake_bush",
+    "mapId": "map_snake_valley",
+    "name": "蛇草丛",
+    "type": "monster_area",
+    "x": 980,
+    "y": 430,
+    "sprite": "snake_bush",
+    "dialogue": "草叶上挂着发黑的毒液。",
+    "targetMonsterIds": [
+      "monster_snake",
+      "monster_venom_snake"
+    ],
+    "requiredTaskIds": [
+      "task_mine_route"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 0,
+    "encounterMinCount": 1,
+    "encounterMaxCount": 3,
+    "encounterEliteChance": 0.16,
+    "encounterIntervalSeconds": 5,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_snake",
+        "weight": 62
+      },
+      {
+        "monsterId": "monster_venom_snake",
+        "weight": 38
+      }
+    ]
+  },
+  {
+    "id": "event_snake_daily_herb",
+    "mapId": "map_snake_valley",
+    "name": "毒草药篓",
+    "type": "reward",
+    "x": 1320,
+    "y": 710,
+    "sprite": "venom_basket",
+    "dialogue": "旧药篓半埋在草根下，里面还有几只干硬的毒囊。",
+    "rewardGold": 20,
+    "rewardExp": 24,
+    "rewardItems": [
+      {
+        "itemId": "mat_venom_sac",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_level_3"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_depths_daily_crate",
+    "mapId": "map_mine_depths",
+    "name": "塌方木箱",
+    "type": "reward",
+    "x": 760,
+    "y": 760,
+    "sprite": "broken_crate",
+    "dialogue": "塌方旁的木箱还没完全腐烂，里面压着几块矿工留下的铁矿。",
+    "rewardGold": 26,
+    "rewardExp": 30,
+    "rewardItems": [
+      {
+        "itemId": "mat_iron_ore",
+        "quantity": 2
+      }
+    ],
+    "requiredTaskIds": [
+      "task_level_4"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_skeleton_gate",
+    "mapId": "map_skeleton_cave",
+    "name": "骷髅洞石门",
+    "type": "monster_area",
+    "x": 920,
+    "y": 500,
+    "sprite": "bone_gate",
+    "dialogue": "石门后回荡着骨节碰撞声。",
+    "targetMonsterIds": [
+      "monster_skeleton",
+      "monster_skeleton_archer"
+    ],
+    "requiredTaskIds": [
+      "task_level_5"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 30,
+    "encounterMinCount": 2,
+    "encounterMaxCount": 4,
+    "encounterEliteChance": 0.18,
+    "encounterIntervalSeconds": 6,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_skeleton",
+        "weight": 58
+      },
+      {
+        "monsterId": "monster_skeleton_archer",
+        "weight": 42
+      }
+    ]
+  },
+  {
+    "id": "event_skeleton_daily_bones",
+    "mapId": "map_skeleton_cave",
+    "name": "散落骨堆",
+    "type": "reward",
+    "x": 1380,
+    "y": 690,
+    "sprite": "bone_pile",
+    "dialogue": "骨堆里夹着几片带着冷光的碎骨，似乎还能拿去换些钱。",
+    "rewardGold": 34,
+    "rewardExp": 42,
+    "rewardItems": [
+      {
+        "itemId": "mat_bone_shard",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_level_5"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_temple_portal",
+    "mapId": "map_temple_outskirts",
+    "name": "正殿入口",
+    "type": "portal",
+    "x": 1260,
+    "y": 460,
+    "sprite": "temple_portal",
+    "dialogue": "正殿石阶上刻着模糊的旧誓词。",
+    "targetMapId": "map_temple_hall",
+    "requiredTaskIds": [
+      "task_temple_guard"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_temple_daily_incense",
+    "mapId": "map_temple_outskirts",
+    "name": "熄灭香炉",
+    "type": "reward",
+    "x": 620,
+    "y": 640,
+    "sprite": "incense_burner",
+    "dialogue": "香炉灰烬下压着半枚残破符片，仍带着一点温热。",
+    "rewardGold": 42,
+    "rewardExp": 55,
+    "rewardItems": [
+      {
+        "itemId": "mat_temple_relic",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_talk_scout"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_hall_daily_statue",
+    "mapId": "map_temple_hall",
+    "name": "裂纹石像",
+    "type": "reward",
+    "x": 1180,
+    "y": 760,
+    "sprite": "cracked_statue",
+    "dialogue": "石像裂纹里夹着旧符片，轻轻一碰便落了下来。",
+    "rewardGold": 54,
+    "rewardExp": 70,
+    "rewardItems": [
+      {
+        "itemId": "mat_temple_relic",
+        "quantity": 2
+      }
+    ],
+    "requiredTaskIds": [
+      "task_temple_hall_entry"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_redmoon_daily_crystal",
+    "mapId": "map_redmoon_ravine",
+    "name": "赤色晶尘",
+    "type": "reward",
+    "x": 1420,
+    "y": 620,
+    "sprite": "redmoon_crystal",
+    "dialogue": "岩缝里的赤色晶尘微微发亮，装进布袋后仍像余烬一样温热。",
+    "rewardGold": 68,
+    "rewardExp": 90,
+    "rewardItems": [
+      {
+        "itemId": "mat_redmoon_dust",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_redmoon_spider"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_redmoon_depths_gate",
+    "mapId": "map_redmoon_ravine",
+    "name": "赤月裂门",
+    "type": "portal",
+    "x": 1620,
+    "y": 520,
+    "sprite": "redmoon_gate",
+    "dialogue": "石门缝隙里涌出赤色雾气，深处传来低沉回响。",
+    "targetMapId": "map_redmoon_depths",
+    "requiredTaskIds": [
+      "task_blood_hound"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_redmoon_depths_area",
+    "mapId": "map_redmoon_depths",
+    "name": "深渊前线",
+    "type": "monster_area",
+    "x": 980,
+    "y": 450,
+    "sprite": "redmoon_depths_area",
+    "dialogue": "赤月守卫与深渊法师在废墟间巡游。",
+    "targetMonsterIds": [
+      "monster_redmoon_guard",
+      "monster_abyss_mage"
+    ],
+    "requiredTaskIds": [
+      "task_level_9"
+    ],
+    "nextEventIds": [
+      "event_altar_gate"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 30,
+    "encounterMinCount": 2,
+    "encounterMaxCount": 4,
+    "encounterEliteChance": 0.24,
+    "encounterIntervalSeconds": 7,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_redmoon_guard",
+        "weight": 55
+      },
+      {
+        "monsterId": "monster_abyss_mage",
+        "weight": 45
+      }
+    ]
+  },
+  {
+    "id": "event_redmoon_depths_daily_ember",
+    "mapId": "map_redmoon_depths",
+    "name": "深渊余烬",
+    "type": "reward",
+    "x": 1460,
+    "y": 760,
+    "sprite": "abyss_ember_cluster",
+    "dialogue": "冷却的黑石下仍压着余烬，拾起时指尖微微发烫。",
+    "rewardGold": 86,
+    "rewardExp": 110,
+    "rewardItems": [
+      {
+        "itemId": "mat_abyss_ember",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_redmoon_guard"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_altar_gate",
+    "mapId": "map_redmoon_depths",
+    "name": "祭坛之门",
+    "type": "portal",
+    "x": 1760,
+    "y": 560,
+    "sprite": "altar_gate",
+    "dialogue": "门后的黑火沿着石阶向上蔓延，恶魔祭坛就在前方。",
+    "targetMapId": "map_demon_altar",
+    "requiredTaskIds": [
+      "task_abyss_mage"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 0
+  },
+  {
+    "id": "event_altar_core",
+    "mapId": "map_demon_altar",
+    "name": "祭坛核心",
+    "type": "monster_area",
+    "x": 1040,
+    "y": 500,
+    "sprite": "altar_core",
+    "dialogue": "祭坛核心周围魔纹翻涌，强敌正在守护仪式。",
+    "targetMonsterIds": [
+      "monster_altar_knight",
+      "monster_demon_priest"
+    ],
+    "requiredTaskIds": [
+      "task_level_10"
+    ],
+    "repeatable": true,
+    "cooldownSeconds": 45,
+    "encounterMinCount": 2,
+    "encounterMaxCount": 5,
+    "encounterEliteChance": 0.28,
+    "encounterIntervalSeconds": 8,
+    "encounterMonsters": [
+      {
+        "monsterId": "monster_altar_knight",
+        "weight": 52
+      },
+      {
+        "monsterId": "monster_demon_priest",
+        "weight": 48
+      }
+    ]
+  },
+  {
+    "id": "event_altar_daily_core",
+    "mapId": "map_demon_altar",
+    "name": "恶魔核心",
+    "type": "reward",
+    "x": 1520,
+    "y": 740,
+    "sprite": "demon_core_shard",
+    "dialogue": "破碎的祭坛边缘残留着凝固的恶魔核心。",
+    "rewardGold": 110,
+    "rewardExp": 145,
+    "rewardItems": [
+      {
+        "itemId": "mat_demon_core",
+        "quantity": 1
+      }
+    ],
+    "requiredTaskIds": [
+      "task_altar_knight"
+    ],
+    "repeatable": true,
+    "resetType": "daily",
+    "cooldownSeconds": 0
+  }
+]

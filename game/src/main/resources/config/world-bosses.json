@@ -1,0 +1,12 @@
+[
+  {
+    "id": "world_boss_skeleton_king",
+    "name": "世界首领·骷髅王",
+    "mapId": "map_skeleton_cave",
+    "monsterId": "monster_skeleton",
+    "respawnMinutes": 120,
+    "rewardMultiplier": 3,
+    "requiredLevel": 3,
+    "requiredPower": 500
+  }
+]

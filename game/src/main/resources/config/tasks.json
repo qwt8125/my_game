@@ -1,0 +1,593 @@
+[
+  {
+    "id": "task_talk_chief",
+    "name": "村外问讯",
+    "type": "talk_npc",
+    "targetId": "npc_village_chief",
+    "targetCount": 1,
+    "preTaskIds": [],
+    "rewards": {
+      "exp": 15,
+      "gold": 10,
+      "items": []
+    },
+    "story": "村外问讯的线索已经浮现，按目标推进主线。",
+    "guide": "前往目标 NPC 对话。"
+  },
+  {
+    "id": "task_first_blood",
+    "name": "初试身手",
+    "type": "kill_monster",
+    "targetId": "monster_chicken",
+    "targetCount": 3,
+    "preTaskIds": [],
+    "rewards": {
+      "exp": 30,
+      "gold": 20,
+      "items": []
+    },
+    "story": "初试身手的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_first_weapon",
+    "name": "整备武器",
+    "type": "level_reach",
+    "targetLevel": 2,
+    "preTaskIds": [
+      "task_first_blood"
+    ],
+    "rewards": {
+      "exp": 20,
+      "gold": 30,
+      "items": [
+        {
+          "itemId": "item_wood_sword",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "整备武器的线索已经浮现，按目标推进主线。",
+    "guide": "提升角色等级后领取奖励。"
+  },
+  {
+    "id": "task_wolf_warning",
+    "name": "野狼警讯",
+    "type": "kill_monster",
+    "targetId": "monster_wolf",
+    "targetCount": 2,
+    "preTaskIds": [
+      "task_talk_chief"
+    ],
+    "rewards": {
+      "exp": 45,
+      "gold": 28,
+      "items": []
+    },
+    "story": "野狼警讯的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_old_well_trace",
+    "name": "废井抓痕",
+    "type": "explore_event",
+    "targetId": "event_novice_old_well",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_first_blood"
+    ],
+    "rewards": {
+      "exp": 35,
+      "gold": 20,
+      "items": []
+    },
+    "story": "废井抓痕的线索已经浮现，按目标推进主线。",
+    "guide": "前往地图点位完成探索。"
+  },
+  {
+    "id": "task_talk_miner",
+    "name": "矿洞口信",
+    "type": "talk_npc",
+    "targetId": "npc_miner_laozhou",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_talk_chief"
+    ],
+    "rewards": {
+      "exp": 30,
+      "gold": 18,
+      "items": []
+    },
+    "story": "矿洞口信的线索已经浮现，按目标推进主线。",
+    "guide": "前往目标 NPC 对话。"
+  },
+  {
+    "id": "task_clear_mine_rats",
+    "name": "清理矿鼠",
+    "type": "kill_monster",
+    "targetId": "monster_rat",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_talk_miner"
+    ],
+    "rewards": {
+      "exp": 70,
+      "gold": 42,
+      "items": []
+    },
+    "story": "清理矿鼠的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_spider_web",
+    "name": "蛛网堵路",
+    "type": "kill_monster",
+    "targetId": "monster_mine_spider",
+    "targetCount": 3,
+    "preTaskIds": [
+      "task_talk_miner"
+    ],
+    "rewards": {
+      "exp": 80,
+      "gold": 45,
+      "items": [
+        {
+          "itemId": "mat_beast_bone",
+          "quantity": 2
+        }
+      ]
+    },
+    "story": "蛛网堵路的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_mine_route",
+    "name": "旧矿轨探查",
+    "type": "explore_event",
+    "targetId": "event_mine_track",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_clear_mine_rats"
+    ],
+    "rewards": {
+      "exp": 55,
+      "gold": 35,
+      "items": []
+    },
+    "story": "旧矿轨探查的线索已经浮现，按目标推进主线。",
+    "guide": "前往地图点位完成探索。"
+  },
+  {
+    "id": "task_level_3",
+    "name": "踏入山谷",
+    "type": "level_reach",
+    "targetLevel": 3,
+    "preTaskIds": [
+      "task_first_weapon"
+    ],
+    "rewards": {
+      "exp": 45,
+      "gold": 35,
+      "items": []
+    },
+    "story": "踏入山谷的线索已经浮现，按目标推进主线。",
+    "guide": "提升角色等级后领取奖励。"
+  },
+  {
+    "id": "task_snake_hunt",
+    "name": "山谷毒牙",
+    "type": "kill_monster",
+    "targetId": "monster_snake",
+    "targetCount": 5,
+    "preTaskIds": [
+      "task_level_3"
+    ],
+    "rewards": {
+      "exp": 110,
+      "gold": 70,
+      "items": []
+    },
+    "story": "山谷毒牙的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_venom_trace",
+    "name": "花斑毒踪",
+    "type": "kill_monster",
+    "targetId": "monster_venom_snake",
+    "targetCount": 3,
+    "preTaskIds": [
+      "task_snake_hunt"
+    ],
+    "rewards": {
+      "exp": 120,
+      "gold": 80,
+      "items": []
+    },
+    "story": "花斑毒踪的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_level_4",
+    "name": "深入矿脉",
+    "type": "level_reach",
+    "targetLevel": 4,
+    "preTaskIds": [
+      "task_mine_route"
+    ],
+    "rewards": {
+      "exp": 80,
+      "gold": 60,
+      "items": []
+    },
+    "story": "深入矿脉的线索已经浮现，按目标推进主线。",
+    "guide": "提升角色等级后领取奖励。"
+  },
+  {
+    "id": "task_cave_bat",
+    "name": "驱散蝙蝠",
+    "type": "kill_monster",
+    "targetId": "monster_cave_bat",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_level_4"
+    ],
+    "rewards": {
+      "exp": 130,
+      "gold": 85,
+      "items": []
+    },
+    "story": "驱散蝙蝠的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_level_5",
+    "name": "骨洞门槛",
+    "type": "level_reach",
+    "targetLevel": 5,
+    "preTaskIds": [
+      "task_venom_trace"
+    ],
+    "rewards": {
+      "exp": 100,
+      "gold": 80,
+      "items": [
+        {
+          "itemId": "item_iron_sword",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "骨洞门槛的线索已经浮现，按目标推进主线。",
+    "guide": "提升角色等级后领取奖励。"
+  },
+  {
+    "id": "task_skeleton_hunt",
+    "name": "骷髅清扫",
+    "type": "kill_monster",
+    "targetId": "monster_skeleton",
+    "targetCount": 6,
+    "preTaskIds": [
+      "task_level_5"
+    ],
+    "rewards": {
+      "exp": 180,
+      "gold": 120,
+      "items": []
+    },
+    "story": "骷髅清扫的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_skeleton_archer",
+    "name": "断弦之骨",
+    "type": "kill_monster",
+    "targetId": "monster_skeleton_archer",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_skeleton_hunt"
+    ],
+    "rewards": {
+      "exp": 190,
+      "gold": 125,
+      "items": []
+    },
+    "story": "断弦之骨的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_bone_report",
+    "name": "骨洞回报",
+    "type": "explore_event",
+    "targetId": "event_skeleton_gate",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_skeleton_archer"
+    ],
+    "rewards": {
+      "exp": 120,
+      "gold": 90,
+      "items": []
+    },
+    "story": "骨洞回报的线索已经浮现，按目标推进主线。",
+    "guide": "前往地图点位完成探索。"
+  },
+  {
+    "id": "task_talk_scout",
+    "name": "外庭情报",
+    "type": "talk_npc",
+    "targetId": "npc_temple_scout",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_bone_report"
+    ],
+    "rewards": {
+      "exp": 100,
+      "gold": 90,
+      "items": []
+    },
+    "story": "外庭情报的线索已经浮现，按目标推进主线。",
+    "guide": "前往目标 NPC 对话。"
+  },
+  {
+    "id": "task_temple_guard",
+    "name": "外庭守卫",
+    "type": "kill_monster",
+    "targetId": "monster_temple_guard",
+    "targetCount": 5,
+    "preTaskIds": [
+      "task_talk_scout"
+    ],
+    "rewards": {
+      "exp": 240,
+      "gold": 160,
+      "items": []
+    },
+    "story": "外庭守卫的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_temple_hall_entry",
+    "name": "正殿入口",
+    "type": "explore_event",
+    "targetId": "event_temple_portal",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_temple_guard"
+    ],
+    "rewards": {
+      "exp": 160,
+      "gold": 120,
+      "items": []
+    },
+    "story": "正殿入口的线索已经浮现，按目标推进主线。",
+    "guide": "前往地图点位完成探索。"
+  },
+  {
+    "id": "task_dark_monk",
+    "name": "黑衣僧影",
+    "type": "kill_monster",
+    "targetId": "monster_dark_monk",
+    "targetCount": 5,
+    "preTaskIds": [
+      "task_temple_hall_entry"
+    ],
+    "rewards": {
+      "exp": 280,
+      "gold": 190,
+      "items": []
+    },
+    "story": "黑衣僧影的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_stone_guardian",
+    "name": "石像轰鸣",
+    "type": "kill_monster",
+    "targetId": "monster_stone_guardian",
+    "targetCount": 3,
+    "preTaskIds": [
+      "task_dark_monk"
+    ],
+    "rewards": {
+      "exp": 300,
+      "gold": 210,
+      "items": []
+    },
+    "story": "石像轰鸣的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_redmoon_spider",
+    "name": "赤月前哨",
+    "type": "kill_monster",
+    "targetId": "monster_redmoon_spider",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_stone_guardian"
+    ],
+    "rewards": {
+      "exp": 340,
+      "gold": 240,
+      "items": []
+    },
+    "story": "赤月前哨的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_blood_hound",
+    "name": "血牙追猎",
+    "type": "kill_monster",
+    "targetId": "monster_blood_hound",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_redmoon_spider"
+    ],
+    "rewards": {
+      "exp": 360,
+      "gold": 260,
+      "items": []
+    },
+    "story": "血牙追猎的线索已经浮现，按目标推进主线。",
+    "guide": "击败指定怪物达到数量。"
+  },
+  {
+    "id": "task_level_9",
+    "name": "突破九阶",
+    "type": "level_reach",
+    "targetLevel": 9,
+    "preTaskIds": [
+      "task_blood_hound"
+    ],
+    "rewards": {
+      "exp": 240,
+      "gold": 180,
+      "items": [
+        {
+          "itemId": "consumable_hero_elixir",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "你已接近赤月深处，新的威胁在裂隙后苏醒。",
+    "guide": "等级达到 9 级。"
+  },
+  {
+    "id": "task_redmoon_depths_entry",
+    "name": "踏入深渊",
+    "type": "explore_event",
+    "targetId": "event_redmoon_depths_gate",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_level_9"
+    ],
+    "rewards": {
+      "exp": 220,
+      "gold": 160,
+      "items": []
+    },
+    "story": "赤月峡谷尽头的裂门已经打开，深处传来沉闷回响。",
+    "guide": "通过赤月裂门进入赤月深渊。"
+  },
+  {
+    "id": "task_redmoon_guard",
+    "name": "击破守卫",
+    "type": "kill_monster",
+    "targetId": "monster_redmoon_guard",
+    "targetCount": 5,
+    "preTaskIds": [
+      "task_redmoon_depths_entry"
+    ],
+    "rewards": {
+      "exp": 420,
+      "gold": 300,
+      "items": [
+        {
+          "itemId": "mat_abyss_ember",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "赤月守卫拦在深渊通道前，必须清出道路。",
+    "guide": "击败赤月守卫。"
+  },
+  {
+    "id": "task_abyss_mage",
+    "name": "驱散法师",
+    "type": "kill_monster",
+    "targetId": "monster_abyss_mage",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_redmoon_guard"
+    ],
+    "rewards": {
+      "exp": 460,
+      "gold": 330,
+      "items": []
+    },
+    "story": "深渊法师维持着通往祭坛的暗纹结界。",
+    "guide": "击败深渊法师。"
+  },
+  {
+    "id": "task_level_10",
+    "name": "踏入十阶",
+    "type": "level_reach",
+    "targetLevel": 10,
+    "preTaskIds": [
+      "task_abyss_mage"
+    ],
+    "rewards": {
+      "exp": 320,
+      "gold": 260,
+      "items": [
+        {
+          "itemId": "item_redmoon_armor",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "恶魔祭坛的气息逼近，只有更强的你才能前进。",
+    "guide": "等级达到 10 级。"
+  },
+  {
+    "id": "task_altar_entry",
+    "name": "进入祭坛",
+    "type": "explore_event",
+    "targetId": "event_altar_gate",
+    "targetCount": 1,
+    "preTaskIds": [
+      "task_level_10"
+    ],
+    "rewards": {
+      "exp": 300,
+      "gold": 240,
+      "items": []
+    },
+    "story": "祭坛之门开启，黑色火光照亮前路。",
+    "guide": "通过祭坛之门。"
+  },
+  {
+    "id": "task_altar_knight",
+    "name": "祭坛骑士",
+    "type": "kill_monster",
+    "targetId": "monster_altar_knight",
+    "targetCount": 4,
+    "preTaskIds": [
+      "task_altar_entry"
+    ],
+    "rewards": {
+      "exp": 520,
+      "gold": 380,
+      "items": [
+        {
+          "itemId": "mat_demon_core",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "祭坛骑士守着核心阶梯，甲胄上燃着暗火。",
+    "guide": "击败祭坛骑士。"
+  },
+  {
+    "id": "task_demon_priest",
+    "name": "恶魔祭司",
+    "type": "kill_monster",
+    "targetId": "monster_demon_priest",
+    "targetCount": 3,
+    "preTaskIds": [
+      "task_altar_knight"
+    ],
+    "rewards": {
+      "exp": 560,
+      "gold": 420,
+      "items": [
+        {
+          "itemId": "item_soul_bracelet",
+          "quantity": 1
+        }
+      ]
+    },
+    "story": "恶魔祭司正在召唤更深层的力量，必须立刻阻止。",
+    "guide": "击败恶魔祭司。"
+  }
+]

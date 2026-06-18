@@ -1,0 +1,41 @@
+[
+  {
+    "id": "warrior",
+    "name": "战士",
+    "description": "生命和防御优秀，擅长近身爆发。",
+    "hp": 120,
+    "attack": 12,
+    "defense": 4,
+    "attackSpeed": 100,
+    "hpPerLevel": 20,
+    "attackPerLevel": 3,
+    "defensePerLevel": 1,
+    "attackSpeedPerLevel": 1
+  },
+  {
+    "id": "mage",
+    "name": "法师",
+    "description": "攻击成长突出，依靠强力术法快速击溃目标。",
+    "hp": 105,
+    "attack": 17,
+    "defense": 3,
+    "attackSpeed": 102,
+    "hpPerLevel": 16,
+    "attackPerLevel": 5,
+    "defensePerLevel": 1,
+    "attackSpeedPerLevel": 1
+  },
+  {
+    "id": "taoist",
+    "name": "道士",
+    "description": "属性均衡，擅长持续伤害、治疗和持久作战。",
+    "hp": 125,
+    "attack": 12,
+    "defense": 5,
+    "attackSpeed": 100,
+    "hpPerLevel": 20,
+    "attackPerLevel": 3,
+    "defensePerLevel": 1,
+    "attackSpeedPerLevel": 2
+  }
+]

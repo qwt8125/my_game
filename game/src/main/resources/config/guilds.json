@@ -1,0 +1,83 @@
+{
+  "donations" : [ {
+    "id" : "small_gold",
+    "name" : "小额捐献",
+    "description" : "消耗 200 金币，获得 20 点贡献。",
+    "goldCost" : 200,
+    "contribution" : 20,
+    "dailyLimit" : 3
+  }, {
+    "id" : "medium_gold",
+    "name" : "标准捐献",
+    "description" : "消耗 500 金币，获得 60 点贡献。",
+    "goldCost" : 500,
+    "contribution" : 60,
+    "dailyLimit" : 2
+  }, {
+    "id" : "large_gold",
+    "name" : "大额捐献",
+    "description" : "消耗 1000 金币，获得 130 点贡献。",
+    "goldCost" : 1000,
+    "contribution" : 130,
+    "dailyLimit" : 1
+  } ],
+  "shopItems" : [ {
+    "id" : "guild_potion_pack",
+    "itemId" : "consumable_small_heal",
+    "quantity" : 3,
+    "contributionCost" : 30,
+    "goldCost" : 120,
+    "dailyLimit" : 3,
+    "minContribution" : 0,
+    "sortOrder" : 10,
+    "tag" : "补给",
+    "description" : "基础补给包，适合公会新人日常使用。"
+  }, {
+    "id" : "guild_swift_tonic",
+    "itemId" : "consumable_swift_tonic",
+    "quantity" : 1,
+    "contributionCost" : 60,
+    "goldCost" : 200,
+    "dailyLimit" : 2,
+    "minContribution" : 20,
+    "sortOrder" : 20,
+    "tag" : "增益",
+    "description" : "提升战斗准备效率的速度药剂。"
+  }, {
+    "id" : "guild_fine_essence",
+    "itemId" : "mat_fine_essence",
+    "quantity" : 1,
+    "contributionCost" : 120,
+    "goldCost" : 360,
+    "dailyLimit" : 1,
+    "minContribution" : 60,
+    "sortOrder" : 30,
+    "tag" : "养成",
+    "description" : "用于装备强化或词条相关成长。"
+  } ],
+  "activities" : [ {
+    "id" : "guild_daily_support",
+    "name" : "每日协力",
+    "description" : "公会总贡献达到 40 后，成员可领取一次协力奖励。",
+    "targetContribution" : 40,
+    "rewardGold" : 150,
+    "rewardItems" : [ {
+      "itemId" : "consumable_small_heal",
+      "quantity" : 2
+    } ],
+    "sortOrder" : 10,
+    "tag" : "日常"
+  }, {
+    "id" : "guild_growth_supply",
+    "name" : "成长补给",
+    "description" : "公会总贡献达到 120 后，成员可领取装备成长材料。",
+    "targetContribution" : 120,
+    "rewardGold" : 300,
+    "rewardItems" : [ {
+      "itemId" : "mat_common_essence",
+      "quantity" : 1
+    } ],
+    "sortOrder" : 20,
+    "tag" : "成长"
+  } ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "nextLevel": 1,
+    "quality": "",
+    "minRequiredLevel": 0,
+    "goldCost": 20,
+    "materialCosts": [
+      {
+        "itemId": "mat_beast_bone",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "nextLevel": 2,
+    "quality": "",
+    "minRequiredLevel": 0,
+    "goldCost": 45,
+    "materialCosts": [
+      {
+        "itemId": "mat_iron_ore",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "nextLevel": 3,
+    "quality": "",
+    "minRequiredLevel": 0,
+    "goldCost": 85,
+    "materialCosts": [
+      {
+        "itemId": "mat_iron_ore",
+        "quantity": 3
+      },
+      {
+        "itemId": "mat_bone_shard",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "nextLevel": 4,
+    "quality": "",
+    "minRequiredLevel": 5,
+    "goldCost": 150,
+    "materialCosts": [
+      {
+        "itemId": "mat_bone_shard",
+        "quantity": 2
+      },
+      {
+        "itemId": "mat_temple_relic",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "nextLevel": 5,
+    "quality": "",
+    "minRequiredLevel": 7,
+    "goldCost": 260,
+    "materialCosts": [
+      {
+        "itemId": "mat_temple_relic",
+        "quantity": 2
+      },
+      {
+        "itemId": "mat_redmoon_dust",
+        "quantity": 1
+      }
+    ]
+  }
+]

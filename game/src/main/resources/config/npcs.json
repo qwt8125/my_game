@@ -1,0 +1,47 @@
+[
+  {
+    "id": "npc_village_chief",
+    "name": "村长",
+    "mapId": "map_novice_field",
+    "description": "守在村外石碑旁，正在清点出村的新人。",
+    "x": 260,
+    "y": 530,
+    "sprite": "npc_chief",
+    "dialogueLines": [
+      "村外的动静越来越不对劲，先从附近的野兽查起。",
+      "别急着深入矿洞，先把手里的刀磨利。"
+    ],
+    "taskIds": ["task_talk_chief", "task_first_blood", "task_wolf_warning"],
+    "requiredTaskIds": []
+  },
+  {
+    "id": "npc_miner_laozhou",
+    "name": "老周",
+    "mapId": "map_mine_entrance",
+    "description": "矿洞入口的老矿工，手里攥着半截断镐。",
+    "x": 360,
+    "y": 610,
+    "sprite": "npc_miner",
+    "dialogueLines": [
+      "昨晚矿洞里有怪声，鼠群和蛛网都堵到入口了。",
+      "如果你要进去，记住沿着旧轨道走。"
+    ],
+    "taskIds": ["task_talk_miner", "task_clear_mine_rats", "task_spider_web"],
+    "requiredTaskIds": ["task_talk_chief"]
+  },
+  {
+    "id": "npc_temple_scout",
+    "name": "寺庙斥候",
+    "mapId": "map_temple_outskirts",
+    "description": "披着旧斗篷的斥候，正在标记寺庙外庭的巡逻路线。",
+    "x": 420,
+    "y": 470,
+    "sprite": "npc_scout",
+    "dialogueLines": [
+      "寺庙里的守卫不是活人，但它们仍然按旧规矩巡逻。",
+      "先摸清外庭，再考虑正殿。"
+    ],
+    "taskIds": ["task_talk_scout", "task_temple_guard", "task_temple_hall_entry"],
+    "requiredTaskIds": ["task_bone_report"]
+  }
+]

@@ -1,0 +1,92 @@
+[ {
+  "id" : "activity_growth_sprint",
+  "name" : "新服成长冲刺",
+  "type" : "growth",
+  "status" : "active",
+  "tag" : "限时",
+  "summary" : "提升等级和战力，优先解锁高阶地图与世界 BOSS 参与门槛。",
+  "description" : "活动期间推荐优先完成主线任务、自动遭遇和装备重铸，快速冲刺 10 级内容。",
+  "startAt" : "2026-05-25 00:00",
+  "endAt" : "2026-06-01 00:00",
+  "priority" : 10,
+  "targetView" : "tasks",
+  "rewardGold" : 300,
+  "rewardItems" : [ {
+    "itemId" : "consumable_hero_elixir",
+    "quantity" : 1
+  } ],
+  "effects" : [ {
+    "type" : "battle_exp",
+    "percent" : 20,
+    "description" : "战斗经验 +20%"
+  }, {
+    "type" : "battle_gold",
+    "percent" : 20,
+    "description" : "战斗金币 +20%"
+  }, {
+    "type" : "idle_exp",
+    "percent" : 20,
+    "description" : "挂机经验 +20%"
+  }, {
+    "type" : "idle_gold",
+    "percent" : 20,
+    "description" : "挂机金币 +20%"
+  } ],
+  "rankingRewards" : null
+}, {
+  "id" : "activity_redmoon_hunt",
+  "name" : "赤月刷装周",
+  "type" : "drop",
+  "status" : "upcoming",
+  "tag" : "预告",
+  "summary" : "围绕赤月峡谷深处和赤月祭坛的高阶装备追求。",
+  "description" : "后续可扩展为掉落加成、世界 BOSS 额外邮件奖励或排行榜阶段奖励。",
+  "startAt" : "2026-06-01 00:00",
+  "endAt" : "2026-06-08 00:00",
+  "priority" : 8,
+  "targetView" : "maps",
+  "rewardGold" : 0,
+  "rewardItems" : [ {
+    "itemId" : "mat_rare_essence",
+    "quantity" : 2
+  } ],
+  "effects" : [ {
+    "type" : "drop_rate",
+    "percent" : 30,
+    "description" : "战斗掉落概率 +30%"
+  }, {
+    "type" : "world_boss_gold",
+    "percent" : 20,
+    "description" : "世界 BOSS 邮件金币 +20%"
+  } ],
+  "rankingRewards" : null
+}, {
+  "id" : "activity_ranking_trial",
+  "name" : "排行榜试炼",
+  "type" : "ranking",
+  "status" : "active",
+  "tag" : "竞争",
+  "summary" : "关注等级榜、战力榜和财富榜的阶段竞争表现。",
+  "description" : "当前阶段先展示榜单刷新信息，后续可接入 Redis Sorted Set、定时快照和赛季奖励。",
+  "startAt" : "2026-05-25 00:00",
+  "endAt" : "2026-06-08 00:00",
+  "priority" : 6,
+  "targetView" : "rankings",
+  "rewardGold" : 0,
+  "rewardItems" : [ ],
+  "effects" : [ {
+    "type" : "world_boss_gold",
+    "percent" : 10,
+    "description" : "世界 BOSS 邮件金币 +10%"
+  } ],
+  "rankingRewards" : [ {
+    "rankingType" : "level",
+    "maxRank" : 10,
+    "rewardGold" : 500,
+    "rewardItems" : [ {
+      "itemId" : "mat_rare_essence",
+      "quantity" : 1
+    } ],
+    "description" : "等级榜前 10 名可领取阶段奖励"
+  } ]
+} ]
