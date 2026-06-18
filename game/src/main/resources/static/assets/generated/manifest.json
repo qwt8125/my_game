@@ -1,0 +1,545 @@
+{
+  "version": "20260522-image2-pixel",
+  "model": "gpt-image-2",
+  "endpoints": [
+    "https://openkun.xyz/v1/images/generations",
+    "http://ai98pro.xyz/v1/images/generations",
+    "http://ai98pro.xyz/v1/images/generations"
+  ],
+  "generatedAt": "2026-05-22T10:04:56.672Z",
+  "assets": [
+    {
+      "group": "brand",
+      "id": "crest",
+      "name": "游戏徽记",
+      "path": "/assets/generated/brand/crest.png",
+      "prompt": "Use case: stylized-concept\nAsset type: game crest icon for a browser text RPG\nPrimary request: OpenClaw text legend game crest\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: compact fantasy shield crest with crossed sword and small moon, pixel art emblem, no words or letters\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "classes",
+      "id": "warrior",
+      "name": "战士",
+      "path": "/assets/generated/classes/warrior.png",
+      "prompt": "Use case: stylized-concept\nAsset type: playable class portrait for a browser text RPG\nPrimary request: 战士 playable character portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: a sturdy young fantasy warrior with simple armor and a short sword, brave approachable expression\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "classes",
+      "id": "mage",
+      "name": "法师",
+      "path": "/assets/generated/classes/mage.png",
+      "prompt": "Use case: stylized-concept\nAsset type: playable class portrait for a browser text RPG\nPrimary request: 法师 playable character portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: a bright-robed mage holding a glowing charm, clever expression, small magical sparks\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "classes",
+      "id": "taoist",
+      "name": "道士",
+      "path": "/assets/generated/classes/taoist.png",
+      "prompt": "Use case: stylized-concept\nAsset type: playable class portrait for a browser text RPG\nPrimary request: 道士 playable character portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: a calm taoist adventurer with paper talisman and small charm pouch, balanced healer-warrior feel\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_chicken",
+      "name": "鸡",
+      "path": "/assets/generated/monsters/monster_chicken.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 鸡 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 1 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_deer",
+      "name": "鹿",
+      "path": "/assets/generated/monsters/monster_deer.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 鹿 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 1 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_wolf",
+      "name": "野狼",
+      "path": "/assets/generated/monsters/monster_wolf.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 野狼 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 2 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_rat",
+      "name": "矿洞鼠",
+      "path": "/assets/generated/monsters/monster_rat.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 矿洞鼠 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 2 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_mine_spider",
+      "name": "矿蛛",
+      "path": "/assets/generated/monsters/monster_mine_spider.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 矿蛛 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 3 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_snake",
+      "name": "毒蛇",
+      "path": "/assets/generated/monsters/monster_snake.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 毒蛇 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 3 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_venom_snake",
+      "name": "花斑毒蛇",
+      "path": "/assets/generated/monsters/monster_venom_snake.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 花斑毒蛇 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 4 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_cave_bat",
+      "name": "洞穴蝙蝠",
+      "path": "/assets/generated/monsters/monster_cave_bat.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 洞穴蝙蝠 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 4 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_skeleton",
+      "name": "骷髅",
+      "path": "/assets/generated/monsters/monster_skeleton.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 骷髅 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 5 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_skeleton_archer",
+      "name": "骷髅弓手",
+      "path": "/assets/generated/monsters/monster_skeleton_archer.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 骷髅弓手 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 5 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_temple_guard",
+      "name": "寺庙守卫",
+      "path": "/assets/generated/monsters/monster_temple_guard.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 寺庙守卫 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 6 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_dark_monk",
+      "name": "黑衣僧",
+      "path": "/assets/generated/monsters/monster_dark_monk.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 黑衣僧 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 7 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_stone_guardian",
+      "name": "石像守卫",
+      "path": "/assets/generated/monsters/monster_stone_guardian.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 石像守卫 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 7 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_redmoon_spider",
+      "name": "赤月蜘蛛",
+      "path": "/assets/generated/monsters/monster_redmoon_spider.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 赤月蜘蛛 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 8 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_blood_hound",
+      "name": "血牙猎犬",
+      "path": "/assets/generated/monsters/monster_blood_hound.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 血牙猎犬 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 8 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_redmoon_guard",
+      "name": "赤月守卫",
+      "path": "/assets/generated/monsters/monster_redmoon_guard.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 赤月守卫 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 9 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_abyss_mage",
+      "name": "深渊法师",
+      "path": "/assets/generated/monsters/monster_abyss_mage.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 深渊法师 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 9 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_altar_knight",
+      "name": "祭坛骑士",
+      "path": "/assets/generated/monsters/monster_altar_knight.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 祭坛骑士 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 10 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "monsters",
+      "id": "monster_demon_priest",
+      "name": "恶魔祭司",
+      "path": "/assets/generated/monsters/monster_demon_priest.png",
+      "prompt": "Use case: stylized-concept\nAsset type: monster combat sprite for a browser text RPG\nPrimary request: 恶魔祭司 monster sprite\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: level 10 fantasy RPG enemy, cute but hostile cartoon tone, full body, distinctive silhouette, no gore\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_wood_sword",
+      "name": "木剑",
+      "path": "/assets/generated/items/item_wood_sword.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 木剑 weapon icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_cloth_armor",
+      "name": "布衣",
+      "path": "/assets/generated/items/item_cloth_armor.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 布衣 armor chestpiece icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_leather_helmet",
+      "name": "皮盔",
+      "path": "/assets/generated/items/item_leather_helmet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 皮盔 helmet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_copper_necklace",
+      "name": "铜项链",
+      "path": "/assets/generated/items/item_copper_necklace.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铜项链 necklace icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_cloth_boots",
+      "name": "布靴",
+      "path": "/assets/generated/items/item_cloth_boots.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 布靴 boots icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_iron_sword",
+      "name": "铁剑",
+      "path": "/assets/generated/items/item_iron_sword.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铁剑 weapon icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_copper_bracelet",
+      "name": "铜手镯",
+      "path": "/assets/generated/items/item_copper_bracelet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铜手镯 bracelet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_iron_ring",
+      "name": "铁戒指",
+      "path": "/assets/generated/items/item_iron_ring.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铁戒指 ring icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_scale_armor",
+      "name": "鳞甲",
+      "path": "/assets/generated/items/item_scale_armor.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 鳞甲 armor chestpiece icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_bone_helmet",
+      "name": "骨盔",
+      "path": "/assets/generated/items/item_bone_helmet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 骨盔 helmet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_guard_bracelet",
+      "name": "守卫手镯",
+      "path": "/assets/generated/items/item_guard_bracelet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 守卫手镯 bracelet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_silver_blade",
+      "name": "银刃",
+      "path": "/assets/generated/items/item_silver_blade.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 银刃 weapon icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_swift_boots",
+      "name": "疾影靴",
+      "path": "/assets/generated/items/item_swift_boots.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 疾影靴 boots icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_spirit_necklace",
+      "name": "玄灵项链",
+      "path": "/assets/generated/items/item_spirit_necklace.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 玄灵项链 necklace icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_temple_robe",
+      "name": "寺纹长衣",
+      "path": "/assets/generated/items/item_temple_robe.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 寺纹长衣 armor chestpiece icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_blood_ring",
+      "name": "血纹戒指",
+      "path": "/assets/generated/items/item_blood_ring.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 血纹戒指 ring icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_redmoon_blade",
+      "name": "赤月刃",
+      "path": "/assets/generated/items/item_redmoon_blade.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 赤月刃 weapon icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_beast_bone",
+      "name": "兽骨",
+      "path": "/assets/generated/items/mat_beast_bone.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 兽骨 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_iron_ore",
+      "name": "铁矿石",
+      "path": "/assets/generated/items/mat_iron_ore.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铁矿石 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_venom_sac",
+      "name": "毒囊",
+      "path": "/assets/generated/items/mat_venom_sac.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 毒囊 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_bone_shard",
+      "name": "骨片",
+      "path": "/assets/generated/items/mat_bone_shard.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 骨片 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_temple_relic",
+      "name": "残破符片",
+      "path": "/assets/generated/items/mat_temple_relic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 残破符片 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_redmoon_dust",
+      "name": "赤月尘",
+      "path": "/assets/generated/items/mat_redmoon_dust.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 赤月尘 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_common_essence",
+      "name": "粗糙装备精华",
+      "path": "/assets/generated/items/mat_common_essence.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 粗糙装备精华 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_fine_essence",
+      "name": "精良装备精华",
+      "path": "/assets/generated/items/mat_fine_essence.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 精良装备精华 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_rare_essence",
+      "name": "稀有装备精华",
+      "path": "/assets/generated/items/mat_rare_essence.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 稀有装备精华 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_epic_essence",
+      "name": "史诗装备精华",
+      "path": "/assets/generated/items/mat_epic_essence.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 史诗装备精华 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "consumable_small_heal",
+      "name": "回春散",
+      "path": "/assets/generated/items/consumable_small_heal.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 回春散 fantasy potion or medicine icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: simple humble colors, fantasy item icon matching consumable category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "consumable_attack_tonic",
+      "name": "勇力药",
+      "path": "/assets/generated/items/consumable_attack_tonic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 勇力药 fantasy potion or medicine icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching consumable category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "consumable_guard_tonic",
+      "name": "铁骨药",
+      "path": "/assets/generated/items/consumable_guard_tonic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 铁骨药 fantasy potion or medicine icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: clean blue-accented fantasy colors, fantasy item icon matching consumable category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "consumable_swift_tonic",
+      "name": "疾风药",
+      "path": "/assets/generated/items/consumable_swift_tonic.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 疾风药 fantasy potion or medicine icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: purple magical accent colors, fantasy item icon matching consumable category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_redmoon_armor",
+      "name": "赤月战甲",
+      "path": "/assets/generated/items/item_redmoon_armor.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 赤月战甲 armor chestpiece icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_abyss_helmet",
+      "name": "深渊战盔",
+      "path": "/assets/generated/items/item_abyss_helmet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 深渊战盔 helmet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_soul_bracelet",
+      "name": "魂纹手镯",
+      "path": "/assets/generated/items/item_soul_bracelet.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 魂纹手镯 bracelet icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "item_demon_ring",
+      "name": "恶魔戒指",
+      "path": "/assets/generated/items/item_demon_ring.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 恶魔戒指 ring icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching equipment category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_abyss_ember",
+      "name": "深渊余烬",
+      "path": "/assets/generated/items/mat_abyss_ember.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 深渊余烬 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "mat_demon_core",
+      "name": "恶魔核心",
+      "path": "/assets/generated/items/mat_demon_core.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: 恶魔核心 fantasy crafting material icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: warm orange and crimson heroic glow, fantasy item icon matching material category, single object only\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_power_slash",
+      "name": "烈斩",
+      "path": "/assets/generated/skills/skill_power_slash.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 烈斩 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 凝聚力量横扫前排目标，造成高额伤害。; abstract magical effect icon for warrior active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_armor_pierce",
+      "name": "破甲刺击",
+      "path": "/assets/generated/skills/skill_armor_pierce.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 破甲刺击 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 刺向薄弱处，本次攻击忽略部分防御。; abstract magical effect icon for warrior active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_guarding_will",
+      "name": "护体战意",
+      "path": "/assets/generated/skills/skill_guarding_will.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 护体战意 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 战意护身，永久提升生命和防御。; abstract magical effect icon for warrior passive, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_swift_step",
+      "name": "逐风步",
+      "path": "/assets/generated/skills/skill_swift_step.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 逐风步 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 调整步伐和出手节奏，永久提升攻击速度。; abstract magical effect icon for warrior passive, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_fire_charm",
+      "name": "火符术",
+      "path": "/assets/generated/skills/skill_fire_charm.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 火符术 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 以灼热符火越过前排轰击后排目标，造成强力法术伤害。; abstract magical effect icon for mage active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_thunder_light",
+      "name": "雷光术",
+      "path": "/assets/generated/skills/skill_thunder_light.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 雷光术 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 引落雷光穿透目标，附加稳定伤害。; abstract magical effect icon for mage active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_starfire",
+      "name": "星火燎原",
+      "path": "/assets/generated/skills/skill_starfire.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 星火燎原 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 聚起大片星火，对敌方全体造成爆发伤害。; abstract magical effect icon for mage active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_arcane_focus",
+      "name": "灵能贯通",
+      "path": "/assets/generated/skills/skill_arcane_focus.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 灵能贯通 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 增强灵能掌控，永久提升攻击。; abstract magical effect icon for mage passive, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_poison_hex",
+      "name": "施毒术",
+      "path": "/assets/generated/skills/skill_poison_hex.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 施毒术 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 令目标中毒，造成直接伤害并留下持续伤害。; abstract magical effect icon for taoist active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_rejuvenation",
+      "name": "回春术",
+      "path": "/assets/generated/skills/skill_rejuvenation.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 回春术 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 牵引生机恢复自身生命。; abstract magical effect icon for taoist active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_spirit_charm",
+      "name": "玄灵符",
+      "path": "/assets/generated/skills/skill_spirit_charm.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 玄灵符 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 掷出灵符攻击目标，伤害稳定。; abstract magical effect icon for taoist active, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "skills",
+      "id": "skill_spirit_beast_mark",
+      "name": "灵兽契印",
+      "path": "/assets/generated/skills/skill_spirit_beast_mark.png",
+      "prompt": "Use case: stylized-concept\nAsset type: skill icon for a browser text RPG\nPrimary request: 灵兽契印 skill icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 与灵兽契印共鸣，永久提升生命和攻击，预留后续召唤。; abstract magical effect icon for taoist passive, no readable symbols\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "npcs",
+      "id": "npc_village_chief",
+      "name": "村长",
+      "path": "/assets/generated/npcs/npc_village_chief.png",
+      "prompt": "Use case: stylized-concept\nAsset type: NPC portrait for a browser text RPG\nPrimary request: 村长 NPC portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 守在村外石碑旁，正在清点出村的新人。; friendly fantasy villager portrait, waist-up, expressive cartoon face\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "npcs",
+      "id": "npc_miner_laozhou",
+      "name": "老周",
+      "path": "/assets/generated/npcs/npc_miner_laozhou.png",
+      "prompt": "Use case: stylized-concept\nAsset type: NPC portrait for a browser text RPG\nPrimary request: 老周 NPC portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 矿洞入口的老矿工，手里攥着半截断镐。; friendly fantasy villager portrait, waist-up, expressive cartoon face\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "npcs",
+      "id": "npc_temple_scout",
+      "name": "寺庙斥候",
+      "path": "/assets/generated/npcs/npc_temple_scout.png",
+      "prompt": "Use case: stylized-concept\nAsset type: NPC portrait for a browser text RPG\nPrimary request: 寺庙斥候 NPC portrait\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: 披着旧斗篷的斥候，正在标记寺庙外庭的巡逻路线。; friendly fantasy villager portrait, waist-up, expressive cartoon face\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    },
+    {
+      "group": "items",
+      "id": "consumable_hero_elixir",
+      "name": "英雄秘药",
+      "path": "/assets/generated/items/consumable_hero_elixir.png",
+      "prompt": "Use case: stylized-concept\nAsset type: inventory item icon for a browser text RPG\nPrimary request: hero elixir potion bottle icon\nStyle/medium: crisp 32-bit pixel art, cute cartoon fantasy game art, clean blocky silhouettes, saturated but balanced colors\nComposition/framing: centered square asset, generous padding, readable at 48px, slight three-quarter view where appropriate\nScene/backdrop: plain warm parchment background, no scenery unless needed for the subject\nSubject details: a single small red and gold fantasy potion bottle with a cork stopper and soft heroic glow, readable as a rare consumable item, no text\nConstraints: no text, no letters, no numbers, no watermark, no logo, no photorealism, no blurry painterly edges, no UI frame"
+    }
+  ],
+  "failures": []
+}
