@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>v0.5 可交互地图视觉稿</title>
+  <style>
+    :root {
+      --bg: #f5f3ee;
+      --panel: #fffdf8;
+      --panel-2: #f0f6f3;
+      --line: #d8d1c4;
+      --text: #1f2933;
+      --muted: #667085;
+      --brand: #2f6f5e;
+      --brand-2: #8f4a3c;
+      --gold: #b9852f;
+      --danger: #9d2f2f;
+      --shadow: 0 14px 34px rgba(42, 35, 24, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.18)),
+        radial-gradient(circle at 18% 12%, rgba(47, 111, 94, 0.12), transparent 32%),
+        var(--bg);
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button.primary {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #fff;
+    }
+
+    button.ghost {
+      background: transparent;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 248px minmax(420px, 1fr) 340px;
+      gap: 14px;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 253, 248, 0.94);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 56px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.62);
+    }
+
+    .panel-header h2,
+    .panel-header h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .sidebar-list,
+    .quest-list,
+    .log-list {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .map-row,
+    .quest-row,
+    .log-row {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      padding: 10px;
+    }
+
+    .map-row.active {
+      border-color: rgba(47, 111, 94, 0.72);
+      background: #eef7f2;
+    }
+
+    .row-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 58px;
+      min-height: 24px;
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: #f4efe4;
+      color: #6b4e16;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .badge.green {
+      background: #e6f3ee;
+      color: #24604f;
+    }
+
+    .badge.red {
+      background: #f6e9e6;
+      color: #8f3b2f;
+    }
+
+    .map-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .scene-wrap {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: calc(100vh - 32px);
+    }
+
+    .scene-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfaf6;
+    }
+
+    .scene {
+      position: relative;
+      min-height: 510px;
+      margin: 14px;
+      border: 1px solid #b9c6ba;
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.28) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255,255,255,0.28) 1px, transparent 1px),
+        linear-gradient(135deg, #cddfca 0%, #e8dfbd 42%, #c7d8d8 100%);
+      background-size: 48px 48px, 48px 48px, cover;
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(18deg, transparent 0 42%, rgba(92, 74, 42, 0.22) 43% 48%, transparent 49%),
+        linear-gradient(135deg, transparent 0 57%, rgba(47, 111, 94, 0.18) 58% 64%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .path {
+      position: absolute;
+      left: 9%;
+      right: 7%;
+      top: 50%;
+      height: 58px;
+      border-radius: 999px;
+      background: rgba(177, 142, 86, 0.42);
+      transform: rotate(-7deg);
+      border: 1px solid rgba(120, 86, 44, 0.24);
+    }
+
+    .node {
+      position: absolute;
+      width: 128px;
+      min-height: 78px;
+      border: 1px solid rgba(31, 41, 51, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 253, 248, 0.92);
+      box-shadow: 0 10px 24px rgba(31, 41, 51, 0.12);
+      padding: 9px;
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .node:hover,
+    .node:focus {
+      transform: translateY(-2px);
+      border-color: var(--brand);
+      box-shadow: 0 14px 28px rgba(47, 111, 94, 0.2);
+      outline: none;
+    }
+
+    .node strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .node small {
+      display: block;
+      color: var(--muted);
+      line-height: 1.35;
+      font-size: 12px;
+    }
+
+    .node.npc { left: 9%; top: 14%; }
+    .node.monster { left: 39%; top: 22%; }
+    .node.event { left: 62%; top: 12%; }
+    .node.portal { left: 72%; top: 62%; }
+    .node.boss { left: 22%; top: 64%; }
+    .node.treasure { left: 48%; top: 64%; }
+
+    .node.npc .pin { background: var(--brand); }
+    .node.monster .pin { background: var(--danger); }
+    .node.event .pin { background: #596a8f; }
+    .node.portal .pin { background: #4c7b8f; }
+    .node.boss .pin { background: #72343a; }
+    .node.treasure .pin { background: var(--gold); }
+
+    .pin {
+      display: inline-flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .scene-footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      padding: 0 14px 14px;
+    }
+
+    .stat {
+      min-height: 58px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      padding: 9px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+
+    .right-stack {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 14px;
+      min-height: calc(100vh - 32px);
+    }
+
+    .quest-row.ready {
+      border-color: rgba(47, 111, 94, 0.5);
+      background: #f4fbf7;
+    }
+
+    .progress {
+      height: 8px;
+      border-radius: 999px;
+      background: #ece7dd;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .progress i {
+      display: block;
+      height: 100%;
+      background: var(--brand);
+    }
+
+    .log-row {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .log-row strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .action-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 12px;
+      border-top: 1px solid var(--line);
+      background: #fbfaf6;
+    }
+
+    @media (max-width: 1100px) {
+      .app {
+        grid-template-columns: 220px minmax(380px, 1fr);
+      }
+
+      .right-stack {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr 1fr;
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .app {
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+
+      .scene-wrap,
+      .right-stack {
+        min-height: auto;
+      }
+
+      .right-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .scene {
+        min-height: 620px;
+      }
+
+      .node {
+        width: 118px;
+      }
+
+      .scene-footer {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <aside class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>地图</h2>
+          <span class="sub">v0.5 点位探索原型</span>
+        </div>
+      </div>
+      <div class="sidebar-list">
+        <section class="map-row active">
+          <div class="row-top"><span>新手村外</span><span class="badge green">可进入</span></div>
+          <div class="map-meta"><span>Lv.1</span><span>战力 0</span><span>6 个点位</span></div>
+        </section>
+        <section class="map-row">
+          <div class="row-top"><span>废弃矿洞</span><span class="badge green">可进入</span></div>
+          <div class="map-meta"><span>Lv.3</span><span>战力 260</span><span>5 个点位</span></div>
+        </section>
+        <section class="map-row">
+          <div class="row-top"><span>骷髅洞一层</span><span class="badge">任务锁</span></div>
+          <div class="map-meta"><span>Lv.5</span><span>战力 420</span><span>7 个点位</span></div>
+        </section>
+        <section class="map-row">
+          <div class="row-top"><span>沃玛寺庙</span><span class="badge red">未解锁</span></div>
+          <div class="map-meta"><span>Lv.8</span><span>战力 780</span><span>8 个点位</span></div>
+        </section>
+      </div>
+    </aside>
+
+    <section class="panel scene-wrap">
+      <header class="panel-header">
+        <div>
+          <h2>新手村外</h2>
+          <span class="sub">点击 NPC、怪区、探索点或传送点触发交互</span>
+        </div>
+        <span class="badge green">白天</span>
+      </header>
+      <div class="scene-toolbar">
+        <button class="primary">探索附近</button>
+        <button>查看怪物</button>
+        <button>任务线索</button>
+        <button class="ghost">刷新场景</button>
+      </div>
+      <div class="scene" aria-label="可交互地图视觉稿">
+        <div class="path"></div>
+        <button class="node npc" title="与村长对话">
+          <span class="pin">人</span>
+          <strong>村长 阿诚</strong>
+          <small>交付新手任务，开启矿洞线索</small>
+        </button>
+        <button class="node monster" title="进入野兽出没区">
+          <span class="pin">战</span>
+          <strong>野兽出没区</strong>
+          <small>鸡、鹿、野犬，点击后进入战斗</small>
+        </button>
+        <button class="node event" title="调查破旧石碑">
+          <span class="pin">查</span>
+          <strong>破旧石碑</strong>
+          <small>探索事件，可能推进隐藏任务</small>
+        </button>
+        <button class="node portal" title="前往毒蛇山谷">
+          <span class="pin">门</span>
+          <strong>山谷入口</strong>
+          <small>完成村长任务后开启传送</small>
+        </button>
+        <button class="node boss" title="挑战精英怪">
+          <span class="pin">首</span>
+          <strong>野猪头目</strong>
+          <small>短冷却精英，掉落强化材料</small>
+        </button>
+        <button class="node treasure" title="搜索废弃木箱">
+          <span class="pin">箱</span>
+          <strong>废弃木箱</strong>
+          <small>一次性奖励，领取后变为已完成</small>
+        </button>
+      </div>
+      <div class="scene-footer">
+        <div class="stat"><span>角色等级</span><strong>Lv.4</strong></div>
+        <div class="stat"><span>推荐战力</span><strong>260</strong></div>
+        <div class="stat"><span>当前任务</span><strong>3 / 6</strong></div>
+        <div class="stat"><span>事件状态</span><strong>2 已完成</strong></div>
+      </div>
+    </section>
+
+    <section class="right-stack">
+      <aside class="panel">
+        <div class="panel-header">
+          <div>
+            <h3>任务追踪</h3>
+            <span class="sub">可由 NPC、战斗和探索推进</span>
+          </div>
+        </div>
+        <div class="quest-list">
+          <section class="quest-row ready">
+            <div class="row-top"><span>村外异动</span><span class="badge green">可交付</span></div>
+            <span class="sub">与村长阿诚对话</span>
+            <div class="progress"><i style="width:100%"></i></div>
+          </section>
+          <section class="quest-row">
+            <div class="row-top"><span>清理野兽</span><span class="badge">进行中</span></div>
+            <span class="sub">击败野兽 2 / 5</span>
+            <div class="progress"><i style="width:40%"></i></div>
+          </section>
+          <section class="quest-row">
+            <div class="row-top"><span>矿洞线索</span><span class="badge">前置锁</span></div>
+            <span class="sub">完成“村外异动”后解锁</span>
+            <div class="progress"><i style="width:0%"></i></div>
+          </section>
+        </div>
+      </aside>
+
+      <aside class="panel">
+        <div class="panel-header">
+          <div>
+            <h3>事件与战斗记录</h3>
+            <span class="sub">右侧保留文字传奇的叙事节奏</span>
+          </div>
+        </div>
+        <div class="log-list">
+          <section class="log-row">
+            <strong>NPC 对话</strong>
+            村长阿诚：村外的野兽越来越躁动，先去林边看看。
+          </section>
+          <section class="log-row">
+            <strong>探索事件</strong>
+            你调查破旧石碑，发现通往矿洞的旧路标。
+          </section>
+          <section class="log-row">
+            <strong>战斗</strong>
+            你对野犬造成 18 点伤害，野犬剩余 22 点生命。
+          </section>
+        </div>
+        <div class="action-bar">
+          <button class="primary">继续战斗</button>
+          <button>领取奖励</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
