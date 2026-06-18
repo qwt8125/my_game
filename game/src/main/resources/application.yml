@@ -1,0 +1,37 @@
+/server:
+  port: 8080
+
+spring:
+  application:
+    name: legend-game
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:./data/game.db
+    hikari:
+      maximum-pool-size: 5
+      connection-test-query: SELECT 1
+      connection-init-sql: PRAGMA foreign_keys=ON
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/schema.sql
+  redis:
+    url: redis://127.0.0.1:6379/15
+    database: 15
+
+game:
+  config:
+    location: classpath:config/
+  auth:
+    token-hours: 24
+  admin:
+    usernames: admin
+  battle:
+    session-store: redis
+  ranking:
+    cache-ttl-seconds: 60
+
+logging:
+  level:
+    root: INFO
+    com.paly.legend: DEBUG
