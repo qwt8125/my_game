@@ -1,0 +1,19 @@
+[Unit]
+Description=Text Legend Game Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/text-legend
+Environment=SERVER_PORT=8080
+Environment=GAME_DB_PATH=/opt/text-legend/data/game.db
+Environment=LOG_PATH=/opt/text-legend/logs/legend-game.log
+ExecStart=/usr/bin/java -jar /opt/text-legend/legend-game.jar --spring.profiles.active=prod
+Restart=always
+RestartSec=5
+User=textlegend
+Group=textlegend
+
+[Install]
+WantedBy=multi-user.target
+
