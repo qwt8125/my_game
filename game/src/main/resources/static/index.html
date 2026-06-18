@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字传奇</title>
+  <link rel="stylesheet" href="/app.css?v=20260525-v30-activities">
+</head>
+<body data-theme="light">
+  <div id="shell" class="shell auth-only">
+    <aside id="sidebar" class="sidebar hidden">
+      <div class="brand">
+        <img src="/assets/generated/brand/crest.png?v=20260522-image2-pixel" alt="" width="44" height="44">
+        <div>
+          <strong>文字传奇</strong>
+          <span>复古文字页游</span>
+        </div>
+      </div>
+      <nav class="tabs">
+        <button class="tab active" data-view="dashboard">角色</button>
+        <button class="tab" data-view="maps">地图</button>
+        <button class="tab" data-view="tasks">任务</button>
+        <button class="tab" data-view="idle">挂机</button>
+        <button class="tab" data-view="bosses">BOSS</button>
+        <button class="tab" data-view="worldBosses">世界BOSS</button>
+        <button class="tab" data-view="inventory">背包</button>
+        <button class="tab" data-view="equipment">装备</button>
+        <button class="tab" data-view="skills">技能</button>
+        <button class="tab" data-view="talents">天赋</button>
+        <button class="tab" data-view="mails">邮件</button>
+        <button class="tab" data-view="activities">活动</button>
+        <button class="tab" data-view="guilds">公会</button>
+        <button class="tab" data-view="rankings">排行</button>
+        <button id="adminTab" class="tab hidden" data-view="admin">GM</button>
+      </nav>
+    </aside>
+
+    <div id="globalActions" class="global-actions hidden">
+      <button id="changePasswordBtn" class="ghost" type="button">修改密码</button>
+      <button id="themeToggle" class="ghost" type="button">切换为暗色</button>
+      <button id="logoutBtn" class="ghost" type="button">退出</button>
+    </div>
+
+    <main class="main">
+      <section id="authPanel" class="auth-panel">
+        <div class="auth-card">
+          <img src="/assets/generated/brand/crest.png?v=20260522-image2-pixel" alt="" width="72" height="72">
+          <h1>文字传奇</h1>
+          <p class="auth-subtitle">轻量文字页游，注册后即可开始刷怪成长。</p>
+          <div class="auth-grid">
+            <label>账号<input id="username" autocomplete="username" placeholder="player001"></label>
+            <label>密码<input id="password" type="password" autocomplete="current-password" placeholder="至少 6 位"></label>
+          </div>
+          <div class="actions">
+            <button id="loginBtn" type="button">登录</button>
+            <button id="registerBtn" class="secondary" type="button">注册</button>
+          </div>
+          <p id="authMessage" class="message"></p>
+        </div>
+      </section>
+
+      <section id="gamePanel" class="game-panel hidden">
+        <header class="topbar">
+          <div>
+            <h2 id="viewTitle">角色</h2>
+            <p id="statusLine">未载入</p>
+          </div>
+          <button id="refreshBtn" class="secondary" type="button">刷新</button>
+        </header>
+
+        <section id="createCharacterPanel" class="panel hidden">
+          <h3>创建角色</h3>
+          <div class="inline-form">
+            <input id="nickname" placeholder="角色昵称">
+            <select id="classSelect" aria-label="职业选择"></select>
+            <button id="createCharacterBtn" type="button">创建</button>
+          </div>
+          <div id="classPreview" class="class-preview"></div>
+        </section>
+
+        <section id="dashboardView" class="view">
+          <div id="characterStats" class="stat-grid"></div>
+        </section>
+
+        <section id="mapsView" class="view hidden">
+          <div id="layoutMap" class="layout-map">
+            <div class="map-sidebar">
+              <h3>地图</h3>
+              <div id="mapList" class="list"></div>
+              <h3 class="map-tracker-title">任务追踪</h3>
+              <div id="mapTaskTracker" class="map-task-tracker"></div>
+            </div>
+            <div class="map-center">
+              <h3 id="mapSceneTitle">场景</h3>
+              <div id="mapScene" class="map-scene"></div>
+            </div>
+            <div id="mapSidePanel" class="map-side-panel">
+              <h3>交互记录</h3>
+              <div id="mapEventLog" class="log map-event-log"></div>
+              <h3>战斗记录</h3>
+              <div id="battleLog" class="log"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="inventoryView" class="view hidden">
+          <h3>背包</h3>
+          <div id="inventoryList" class="list"></div>
+        </section>
+
+        <section id="tasksView" class="view hidden">
+          <h3>任务</h3>
+          <div id="taskGuidePanel" class="task-guide-panel"></div>
+          <div id="taskChainOverview" class="task-chain-overview"></div>
+          <div id="taskStoryReplay" class="task-story-replay"></div>
+          <div id="taskList" class="list"></div>
+        </section>
+
+        <section id="idleView" class="view hidden">
+          <h3>挂机</h3>
+          <div id="idleStatus" class="panel"></div>
+          <div id="idleOptions" class="list"></div>
+        </section>
+
+        <section id="bossesView" class="view hidden">
+          <h3>BOSS</h3>
+          <div id="bossList" class="list"></div>
+          <h3>战斗记录</h3>
+          <div id="bossBattleLog" class="log"></div>
+        </section>
+
+        <section id="worldBossesView" class="view hidden">
+          <div class="layout-two">
+            <div>
+              <h3>世界 BOSS</h3>
+              <div id="worldBossList" class="list"></div>
+            </div>
+            <div>
+              <h3>挑战记录</h3>
+              <div id="worldBossBattleLog" class="log"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="equipmentView" class="view hidden">
+          <h3>装备</h3>
+          <div id="equipmentStats" class="stat-grid"></div>
+          <div id="equipmentList" class="list"></div>
+        </section>
+
+        <section id="skillsView" class="view hidden">
+          <h3>技能</h3>
+          <div id="skillList" class="list"></div>
+        </section>
+
+        <section id="talentsView" class="view hidden">
+          <div class="item-header">
+            <h3>天赋</h3>
+            <button id="talentResetBtn" class="secondary" type="button">重置天赋</button>
+          </div>
+          <div id="talentSummary" class="stat-grid"></div>
+          <div id="talentList" class="list talent-list"></div>
+        </section>
+
+        <section id="rankingsView" class="view hidden">
+          <div class="ranking-tabs">
+            <button data-ranking="level" class="secondary active" type="button">等级榜</button>
+            <button data-ranking="power" class="secondary" type="button">战力榜</button>
+            <button data-ranking="gold" class="secondary" type="button">财富榜</button>
+          </div>
+          <div id="rankingMeta" class="ranking-meta"></div>
+          <div id="rankingList" class="list"></div>
+        </section>
+
+        <section id="mailsView" class="view hidden">
+          <h3>邮件</h3>
+          <div id="mailList" class="list"></div>
+        </section>
+
+        <section id="activitiesView" class="view hidden">
+          <h3>活动</h3>
+          <div id="activityList" class="list activity-list"></div>
+        </section>
+
+        <section id="guildsView" class="view hidden">
+          <h3>公会</h3>
+          <div id="guildMine" class="guild-layout"></div>
+          <div class="panel guild-create-panel">
+            <div class="item-header">
+              <strong>创建公会</strong>
+              <small>创建者自动成为会长</small>
+            </div>
+            <div class="inline-form">
+              <input id="guildName" placeholder="公会名称">
+              <input id="guildNotice" placeholder="公会公告">
+              <button id="guildCreateBtn" type="button">创建</button>
+            </div>
+          </div>
+          <h3>公会排行</h3>
+          <div id="guildRankings" class="guild-rankings"></div>
+          <h3>公会列表</h3>
+          <div id="guildList" class="list guild-list"></div>
+        </section>
+
+        <section id="adminView" class="view hidden">
+          <h3>GM 后台</h3>
+          <div class="panel">
+            <div class="inline-form">
+              <input id="gmCharacterId" placeholder="角色 ID">
+              <input id="gmGold" placeholder="金币数量">
+              <button id="gmGrantGoldBtn" type="button">发金币</button>
+            </div>
+            <div class="inline-form">
+              <input id="gmItemCharacterId" placeholder="角色 ID">
+              <input id="gmItemId" placeholder="物品 ID">
+              <input id="gmItemQuantity" placeholder="数量">
+              <button id="gmGrantItemBtn" type="button">发物品</button>
+            </div>
+            <div class="inline-form">
+              <input id="gmMailCharacterId" placeholder="角色 ID">
+              <input id="gmMailCharacterIds" placeholder="批量角色 ID，逗号分隔">
+              <input id="gmMailTitle" placeholder="邮件标题">
+              <input id="gmMailGold" placeholder="金币">
+              <input id="gmMailItemId" placeholder="物品 ID">
+              <input id="gmMailQuantity" placeholder="数量">
+              <input id="gmMailExpiresAt" type="datetime-local" title="过期时间">
+              <button id="gmSendMailBtn" type="button">发邮件</button>
+            </div>
+            <label class="inline-check">
+              <input id="gmMailAll" type="checkbox">
+              <span>全服邮件</span>
+            </label>
+            <textarea id="gmMailContent" class="mail-textarea" placeholder="邮件内容"></textarea>
+            <div class="inline-form">
+              <input id="gmAccountId" placeholder="账号 ID">
+              <button id="gmDisableAccountBtn" class="danger" type="button">封禁账号</button>
+              <button id="gmEnableAccountBtn" class="secondary" type="button">解除封禁</button>
+              <button id="gmReloadConfigBtn" class="secondary" type="button">重载配置</button>
+            </div>
+            <p id="gmConfigSummary" class="message"></p>
+            <div class="admin-activity-editor">
+              <div class="item-header">
+                <strong>活动配置</strong>
+                <button id="gmLoadActivitiesBtn" class="secondary" type="button">刷新活动</button>
+              </div>
+              <div class="inline-form">
+                <select id="gmActivitySelect"></select>
+                <select id="gmActivityStatus">
+                  <option value="active">进行中</option>
+                  <option value="upcoming">即将开始</option>
+                  <option value="ended">已结束</option>
+                </select>
+                <select id="gmActivityType">
+                  <option value="growth">成长</option>
+                  <option value="drop">掉落</option>
+                  <option value="ranking">排行</option>
+                  <option value="festival">节日</option>
+                </select>
+                <select id="gmActivityTargetView">
+                  <option value="dashboard">首页</option>
+                  <option value="maps">地图</option>
+                  <option value="tasks">任务</option>
+                  <option value="idle">挂机</option>
+                  <option value="bosses">BOSS</option>
+                  <option value="worldBosses">世界 BOSS</option>
+                  <option value="inventory">背包</option>
+                  <option value="equipment">装备</option>
+                  <option value="skills">技能</option>
+                  <option value="talents">天赋</option>
+                  <option value="mails">邮件</option>
+                  <option value="activities">活动</option>
+                  <option value="guilds">公会</option>
+                  <option value="rankings">排行榜</option>
+                </select>
+              </div>
+              <div class="inline-form">
+                <input id="gmActivityName" placeholder="活动名称">
+                <input id="gmActivityTag" placeholder="标签">
+                <input id="gmActivityPriority" placeholder="优先级">
+                <input id="gmActivityRewardGold" placeholder="直接金币">
+              </div>
+              <div class="inline-form">
+                <input id="gmActivityStartAt" type="datetime-local" title="开始时间">
+                <input id="gmActivityEndAt" type="datetime-local" title="结束时间">
+              </div>
+              <textarea id="gmActivitySummary" placeholder="活动摘要"></textarea>
+              <textarea id="gmActivityDescription" placeholder="活动描述"></textarea>
+              <textarea id="gmActivityRewardItems" class="admin-json-textarea" placeholder="直接奖励物品 JSON"></textarea>
+              <textarea id="gmActivityEffects" class="admin-json-textarea" placeholder="玩法加成 JSON"></textarea>
+              <textarea id="gmActivityRankingRewards" class="admin-json-textarea" placeholder="榜单奖励 JSON"></textarea>
+              <div class="item-actions">
+                <button id="gmSaveActivityBtn" type="button">保存活动</button>
+              </div>
+              <div id="adminActivityList" class="list compact-list"></div>
+            </div>
+            <div class="inline-form">
+              <input id="gmEventCharacterId" placeholder="角色 ID">
+              <input id="gmEventKeepDays" placeholder="保留天数" value="7">
+              <button id="gmLoadEventStatesBtn" type="button">查事件状态</button>
+              <button id="gmCleanupEventStatesBtn" class="secondary" type="button">清理过期状态</button>
+              <button id="gmResetAllEventStatesBtn" class="secondary" type="button">重置全部事件</button>
+            </div>
+            <div id="adminEventStateList" class="list compact-list"></div>
+          </div>
+          <div id="adminCharacterList" class="list"></div>
+        </section>
+      </section>
+
+      <section id="mapLogDrawer" class="map-log-drawer hidden" aria-label="地图日志">
+        <button id="mapLogDrawerHandle" type="button" onclick="toggleMapLogDrawer()">
+          <span>地图记录</span>
+          <small id="mapLogDrawerPreview">暂无交互记录</small>
+        </button>
+        <div class="map-log-drawer-body">
+          <div>
+            <h3>交互记录</h3>
+            <div id="mapEventLogMobile" class="log map-event-log"></div>
+          </div>
+          <div>
+            <h3>战斗记录</h3>
+            <div id="battleLogMobile" class="log"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="passwordModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="passwordModalTitle">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="passwordModalTitle">修改密码</h3>
+          <button id="passwordCloseBtn" class="ghost compact-button" type="button" aria-label="关闭">×</button>
+        </div>
+        <div class="auth-grid">
+          <label>原密码<input id="oldPassword" type="password" autocomplete="current-password"></label>
+          <label>新密码<input id="newPassword" type="password" autocomplete="new-password" placeholder="至少 6 位"></label>
+          <label>确认新密码<input id="confirmPassword" type="password" autocomplete="new-password"></label>
+        </div>
+        <p id="passwordMessage" class="message"></p>
+        <div class="actions">
+          <button id="passwordSubmitBtn" type="button">确认修改</button>
+          <button id="passwordCancelBtn" class="secondary" type="button">取消</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="/app.js?v=20260522-v29-image2-assets"></script>
+</body>
+</html>
