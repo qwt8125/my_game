@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="legend crest">
+  <rect width="96" height="96" fill="#121212"/>
+  <path d="M48 8 78 20v22c0 21-12 36-30 46-18-10-30-25-30-46V20L48 8Z" fill="#2f4f46" stroke="#d6b25e" stroke-width="4"/>
+  <path d="M35 62 61 36M41 30l25 25" stroke="#f3d17b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M48 17 68 25v16c0 16-8 27-20 35-12-8-20-19-20-35V25l20-8Z" fill="none" stroke="#0d0d0d" stroke-width="2" opacity=".55"/>
+</svg>
+
